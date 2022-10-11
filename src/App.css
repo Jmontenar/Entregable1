@@ -1,0 +1,101 @@
+.Footer_container{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 40px;
+}
+.line{
+    background-color: #fff;
+    width: 46px;
+    height: 6px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+.Footer_container:hover{
+    cursor:pointer;
+}
+
+.Footer_container:hover .line-1{
+    transform: translateY(-30px);
+}
+.Footer_container:hover .line-2{
+    opacity: 0;
+}
+.Footer_container:hover .line-3{
+    transform: translateY(30px);
+}
+.Footer_container .menu{
+    visibility: hidden;
+    position: absolute;
+}
+.Footer_container:hover .menu{
+    visibility: visible;
+    transition: 0.9s ease-in-out
+}
+.Footer_container .menu ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    opacity: 0;
+}
+.Footer_container:hover .menu ul{
+    opacity: 1;
+}
+.menu li{
+    transition: 0,26s ease;
+}
+.menu li:hover{
+    color: rgb(241, 190,47)
+}
+.menu{
+    padding-right: 40px;
+}
+
+ul li a{
+    display: block;
+    text-align: center;
+    margin:  0 10px;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+ul li{
+    list-style: none
+}
+ul li a{
+    text-align: center;
+    margin:  0 10px;
+    border-radius: 50%;
+    width: 50px;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+ul li a:hover{
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration: none
+}
+ul li a .fa-brands{
+    display: block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size: 24px;
+    color: #262626;
+    transition: 0.5s;
+}
+ul li:nth-child(1) a:hover .fa-brands{
+    color: #345aad
+}
+ul li:nth-child(2) a:hover .fa-brands{
+    color: #020203
+}
+ul li:nth-child(3) a:hover .fa-brands{
+    color: #49c524
+}

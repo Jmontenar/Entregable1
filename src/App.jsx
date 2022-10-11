@@ -3,6 +3,7 @@ import './App.css'
 import quotes from './json/quotes.json'
 import CardQuotes from './components/CardQuotes'
 import colors from './utils/colors'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -35,6 +36,8 @@ function App() {
         randomQuotes={randomQuotes} 
         randomColors={randomColors}
         getRandomAll={getRandomAll} />
+      
+      <Footer />
     </div>
   )
 }
