@@ -7,12 +7,10 @@ body{
     justify-content:space-between;
     align-items: center;
     flex-direction: column; 
-    
 }
 .Card{
     background-color: #fff;
     box-shadow: 1px 1px 20px rgb(77, 69, 68);
-    width: 550px;
     border-radius: 10px;
     margin-top: 100px;
 }
